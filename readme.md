@@ -1,4 +1,4 @@
-This is a script to kill a port
+#This is a script to kill a port
 
 command to run 
 
