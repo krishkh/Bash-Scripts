@@ -1,58 +1,13 @@
-# 🔥 KillPort - Kill Processes Running on a Port
+Bash Scripts - Quick Tools for Developers
+========================================
 
-A simple script to **kill processes** occupying specified ports on Windows using **Git Bash (MINGW64)**.
+A few scripts I use to make dev life easier. Each one has its own readme for details.
 
-## 📌 How to Use
+Scripts
+-------
 
-### 1️⃣ **Make the Script Executable**
+- **KillPort**: Free up ports by killing whatever is blocking them. [See how](killport/killport.md)
+- **Ping Monitor**: Log if your sites are up or down. [See how](ping_script/ping_script.md)
+- **One-Click Project Opener**: Open your project and start your dev server in one go. [See how](one_click_open_project_script/one_click_open_project_script.md)
 
-First, ensure the script has execution permissions:
-
-```bash
-chmod +x killport.sh
-```
-
-### 2️⃣ **Run the Script**
-
-To kill a specific port, use:
-
-```bash
-./killport.sh <port_number>
-```
-
-For example, to **kill port 3000**:
-
-```bash
-./killport.sh 3000
-```
-
-### 3️⃣ **Kill Multiple Ports at Once**
-
-You can also kill multiple ports in a single command:
-
-```bash
-./killport.sh 3000 3001 5000
-```
-
-## ✅ Features
-
-✔️ Supports multiple ports at once  
-✔️ Checks if the port is in use before attempting to kill  
-✔️ Provides **clear status messages** (Success, Already Closed, or Failed)
-
-## ⚙️ Setup for Global Use
-
-To run this script from **any directory**, add it to your **PATH**:
-
-```bash
-echo 'export PATH=$PATH:~/' >> ~/.bashrc
-source ~/.bashrc
-```
-
-Now, you can simply run:
-
-```bash
-killport.sh <port_number>
-```
-
-from anywhere in your terminal.
+Each script lives in its own folder. Check the docs for setup and tips.
